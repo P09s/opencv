@@ -10,6 +10,8 @@ def rescaleFrame(frame, scale = 0.75) :
 
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
+# rescale or reize the image to be adjusted on screen
+
 resized_image = rescaleFrame(img)
 cv.imshow('Image', resized_image)
 
