@@ -25,6 +25,11 @@ eroded = cv.erode(dilated, (3,3), iterations=4)
 cv.imshow('eroded', eroded)
 
 # resize the image
-resize = cv.resize(img, )
+resize = cv.resize(img, (300, 300), interpolation= cv.INTER_CUBIC)
+cv.imshow('Resized', resize)
+
+# cropping the image
+cropped = img[50:200, 200:400]
+cv.imshow('cropped', cropped)
 
 cv.waitKey(0)
