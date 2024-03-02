@@ -19,6 +19,7 @@ cv.imshow('circle', blank)
 cv.line(blank, (0,0), (250,250), (255,0,0), thickness=3 )
 cv.imshow('line', blank)
 
-cv.text()
+cv.putText(blank, 'hey there', (230,400), cv.FONT_HERSHEY_SIMPLEX, 1.0, (0,0,255), thickness=3)
+cv.imshow('Text', blank)
 
 cv.waitKey(0)
