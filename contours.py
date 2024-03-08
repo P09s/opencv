@@ -6,7 +6,10 @@ cv.imshow('bro', img)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('gray', gray)
 
-canny = cv.Canny(gray, 125, 125)
+blur = cv.GaussianBlur(gray, (5,5), cv.BORDER_DEFAULT)
+cv.imshow('blur', blur)
+
+canny = cv.Canny(blur, 125, 125)
 cv.imshow('canny', canny)
 
 contour, hierarchy = cv.findContours(canny, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
