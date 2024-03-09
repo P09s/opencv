@@ -15,4 +15,12 @@ cv.imshow('hsv', hsv)
 Lab = cv.cvtColor(img, cv.COLOR_BGR2LAB)
 cv.imshow('Lab', Lab)
 
+# BGR to RGB
+rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+cv.imshow('rgb', rgb)
+
+# HSV to BGR
+hsv_bgr = cv.cvtColor(Lab, cv.COLOR_Lab2BGR)
+cv.imshow('lab --> bgr', hsv_bgr)
+
 cv.waitKey(0)
