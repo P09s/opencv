@@ -13,4 +13,7 @@ print(b.shape)
 print(g.shape)
 print(r.shape)
 
+merged = cv.merge([b, g, r])
+cv.imshow('merged', merged)
+
 cv.waitKey(0)
