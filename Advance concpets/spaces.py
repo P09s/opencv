@@ -24,3 +24,5 @@ hsv_bgr = cv.cvtColor(Lab, cv.COLOR_Lab2BGR)
 cv.imshow('lab --> bgr', hsv_bgr)
 
 cv.waitKey(0)
+
+# grayscale --> bgr --> lab (the only possible way to change color)
